@@ -24,6 +24,7 @@
        For you to use Git you must first install it in your machine, or check if it has been installed. <br>
        open the command prompt/ terminal depending on the operating system you are using(windows,linux,macos). <br>
        Type the command <em>(git --verion)</em> and hit enter. <br>
+       <img src="Screenshot (145).png" alt="a Screenshot showing the terminal with git version command">
        if you have Git installed then the response will be the version of Git installed in your machine eg.(git version 2.43.o.windows.1). <br>
        if not, then you will see an error message that the command is not recognized. <br>
        Go ahead and download Git. Here is a link <a href="https://ww.git-scm.com/book/en/v2/Getting-Started-Installing-Git" target="_blank" title="download">Git</a>
@@ -33,6 +34,7 @@
         After installing Git let it know who you are by passing in your username and email address. <br>
         To configure your username use the command <em>(git config --global user.name"your username")</em> <br>
         To configure your email address use the command <em>(git config --user.email"your emailaddress")</em> <br>
+        <img src="Screenshot (146).png" alt="git config command">
         It is advisable that you use your GitHub email address. 
     </p>
     <h1>Initializing a Git repository</h1>
@@ -40,6 +42,7 @@
         To use Git in your project, you need to initialize a git repository inside that project. <br>
         A git repository is a storage location where GIT version control system manages and stores projects files and revision history. <br>
         First check if the project contains a repository to avoid reinitializing by running the command <em>(git status)</em> <br>
+        <img src="Screenshot (137).png" alt="git init command">
         If the project does not contain a Git repository you will get the message "fatal not a git repository". <br>
         Any other message means that the project contains a repository. <br>
         If the project does not contain a git repository you can create/initialize one by using the command <em>(git init)</em> <br>
@@ -49,6 +52,7 @@
     <p>
         After creating an empty git repository, you need to add some files. <br>
         Use the command git status to verify that the file is part of the repository. <br>
+        <img src="Screenshot (140).png" alt="git status command">
         You will see that your file is under untracked files, thus you need to add it to your repository. <br>
         Files in your GitHub repository can be in one of the two states: tracked or untracked. <br>
         Tracked files: are files that git know about and are added to the repository. <br>
@@ -57,6 +61,7 @@
         To add a file to the staging environment, use the command <em>(git add filename)</em> <br>
         If you have more than one file you can specify the file names <em>(git add file1 file2 file3)</em> <br>
         If you want to add all the files in the project instead of specifying those files, use a period symbol <em>(git add .)</em> <br>
+        <img src="Screenshot (139).png" alt="git add .">
     </p>
     <h1>Commiting changes</h1>
     <p>
@@ -65,6 +70,7 @@
       We use the command <em>(git commit -m"commit message")</em> to commit changes to our repository. <br>
       The commit command performs a commit and the -m "message" adds a message. <br>
       To view past commits you use the command <em>(git log) or (git log --online)</em> if you want a bit more compressed output of git log.
+      <img src="Screenshot (141).png" alt="git commit command">
     </p>
     <h1>Git branches</h1>
     <p>
@@ -75,6 +81,7 @@
     <h2>Creating a branch</h2>
     <p>To create a branch, we use the command <em>(git branch new-branch-name)</em>. <br>
         You can view all the branches we have using the command <em>(git branch)</em>. <br>
+        <img src="Screenshot (142).png" alt="git branch command">
         </p>
         <h2>Merging a branch</h2> <p>
             To merge a branch add all the changes made in the branch to the staging area then commit those changes. <br>
@@ -84,7 +91,10 @@
 </p>
 <h3>Switching branches</h3>
 <p>
-You can change/switch branches using the command <em>(git checkout branch-name)</em> <br> </p>
+You can change/switch branches using the command <em>(git checkout branch-name)</em> <br>
+<img src="Screenshot (144).png" alt="git branch command for switching">
+
+</p>
 <h3>Deleting brances</h3> 
 <p>
     To delete a branch you use the command <em>(git btanch -D branch name)</em>
